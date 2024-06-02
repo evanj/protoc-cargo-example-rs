@@ -1,0 +1,12 @@
+[package]
+name = "protobuf-src-example"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+prost = { workspace = true }
+
+[build-dependencies]
+prost-build = { workspace = true }
+protobuf-src = { workspace = true }

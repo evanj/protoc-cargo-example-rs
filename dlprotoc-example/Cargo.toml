@@ -1,0 +1,12 @@
+[package]
+name = "dlprotoc-example"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+prost = { workspace = true }
+
+[build-dependencies]
+dlprotoc = { workspace = true }
+prost-build = { workspace = true }

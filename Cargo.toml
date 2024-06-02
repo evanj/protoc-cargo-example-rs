@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "dlprotoc-example",
+    "protobuf-src-example",
+]
+
+[workspace.dependencies]
+dlprotoc = "0"
+prost = "0"
+prost-build = { version = "0" }
+protobuf-src = "2"
