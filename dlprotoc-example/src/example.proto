@@ -2,6 +2,9 @@ syntax = "proto3";
 
 package examplepb;
 
+import "google/protobuf/duration.proto";
+
 message Message {
     string message = 1;
+    google.protobuf.Duration example_duration = 2;
 }

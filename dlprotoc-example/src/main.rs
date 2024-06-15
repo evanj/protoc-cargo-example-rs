@@ -2,9 +2,14 @@ mod examplepb {
     include!(concat!(env!("OUT_DIR"), "/examplepb.rs"));
 }
 
-fn main() {
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let std_duration = std::time::Duration::from_secs(7);
+    let proto_duration = prost_types::Duration::try_from(std_duration)?;
     let message = examplepb::Message {
-        message: "protobuf compiled by dlprotobuf".to_string(),
+        message: "protobuf compiled by dlprotoc".to_string(),
+        example_duration: Some(proto_duration),
     };
-    println!("message compiled by dlprotoc = {message:#?}");
+    println!("message = {message:#?}");
+
+    Ok(())
 }

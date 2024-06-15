@@ -9,5 +9,6 @@ members = [
 [workspace.dependencies]
 dlprotoc = "0"
 prost = "0"
-prost-build = { version = "0" }
+prost-types = "0"
+prost-build = "0"
 protobuf-src = "2"

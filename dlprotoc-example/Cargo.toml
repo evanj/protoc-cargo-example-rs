@@ -6,6 +6,7 @@ publish = false
 
 [dependencies]
 prost = { workspace = true }
+prost-types = { workspace = true }
 
 [build-dependencies]
 dlprotoc = { workspace = true }
