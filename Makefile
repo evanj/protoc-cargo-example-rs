@@ -1,17 +1,7 @@
 all:
 	cargo test
 	cargo fmt
-	cargo clippy \
-		--all-targets \
-		-- \
-		-D warnings \
-		-D clippy::nursery \
-		-D clippy::pedantic \
-		-D clippy::style \
-		-D clippy::cargo \
-		-A clippy::option-if-let-else \
-		-A clippy::missing-panics-doc \
-		-A clippy::missing-errors-doc
+	cargo clippy --all-targets
 	cargo verify-project
 	cargo audit
 

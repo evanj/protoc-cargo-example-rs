@@ -6,6 +6,12 @@ members = [
     "protobuf-src-example",
 ]
 
+[workspace.lints.clippy]
+nursery = "deny"
+pedantic = "deny"
+style = "deny"
+cargo = "deny"
+
 [workspace.dependencies]
 dlprotoc = "0"
 prost = "0"
