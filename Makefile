@@ -1,5 +1,5 @@
 all:
-	cargo test
+	cargo test --all-targets
 	cargo fmt
 	# disallow warnings so they fail CI
 	cargo clippy --all-targets -- -D warnings
